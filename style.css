@@ -1,0 +1,256 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    background-color: rgb(230, 230, 230);
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 20px;
+    z-index: 10;
+}
+
+.menu-icon {
+    font-size: 30px;
+    margin-top: -40px;
+    margin-left: 20px;
+}
+
+.menu-icon a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease; 
+}
+
+.menu-icon a:hover {
+    color: #ffcc00; 
+    transform: translateY(-3px); 
+}
+
+
+.logo {
+    text-align: center;
+    
+}
+
+
+.map-icon {
+    margin: 20px;
+    margin-top: -15px;
+}
+
+.map-icon a {
+    color: white; 
+    text-decoration: none; 
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.map-icon a:hover {
+    transform: translateY(-5px);
+}
+
+
+
+
+.banner {
+    width: 100%;
+    height: 700px;
+    background: url('img/maldivas.png') no-repeat center center/cover;
+    position: relative;
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); 
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-dots {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.dot {
+    height: 20px;
+    width: 20px;
+    background-color: rgb(87, 79, 79);
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+.description {
+    text-align: center;
+    padding: 50px;
+    font-size: 25px;
+    font-family: Trebuchet MS, sans-serif
+}
+
+
+.tourist-spots {
+    text-align: center;
+    margin: 20px 0;
+    font-family: Trebuchet MS, sans-serif;
+    color: rgb(56, 55, 55);
+  font-size: x-large;
+}
+
+.circle-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 30px;
+    animation: fadeIn 2s ease-in; 
+    display: flex;
+
+}
+
+.circle-container img{
+    width: 150px;
+    border-radius: 80px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    
+}
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+.circle {
+    transition: transform 0.3s ease; 
+}
+
+.circle:hover {
+    transform: translateY(-10px);
+}
+
+
+
+
+.avaliacao img{
+    width: 120px;
+}
+
+.avaliacao{
+    margin-left: 225px;
+}
+
+
+footer {
+    background-color: #3B8AAB;
+    color: white;
+    text-align: start;
+    height: 245px;
+    
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-family: Trebuchet MS, sans-serif;
+    font-size: x-large;   
+    transition: color 0.3s ease, transform 0.3s ease; 
+}
+
+.footer-links a:hover {
+    color: #ffcc00; 
+    transform: translateY(-3px); 
+}
+
+
+.footer-links {
+    font-size: x-large;
+    padding: 20px;
+    
+}
+
+.social-icons {
+    display: flex;
+    justify-content: flex-end; 
+    margin-right: 20px;
+}
+
+.social-icons img {
+    width: 60px;
+    border-radius: 60px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    margin: 10px; 
+    margin-top: -50px;
+    margin-right: 20px;
+    transition: transform 0.3s ease; 
+}
+
+.social-icons img:hover {
+    transform: translateY(-10px); 
+}
+
+.contact-info{
+    font-size: large;
+    padding: 20px;
+    justify-content: flex-end;
+    font-family:  Trebuchet MS, sans-serif;
+}
+
+
+.contact-info a {
+    color: white;
+    font-family: Trebuchet MS, sans-serif;
+    font-size: large;
+    transition: color 0.3s ease, transform 0.3s ease; 
+}
+
+.contact-info a:hover {
+    color: #ffcc00; 
+    transform: translateY(-3px); 
+}
+
+.loc {
+    display: flex;
+    justify-content: flex-end; 
+    margin-right: 40px;
+    margin-top: -80px;
+}
+
+.loc a { 
+    color: white;
+    font-family: Trebuchet MS, sans-serif;
+    font-size: large;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.loc a:hover {
+    color: #ffcc00; 
+    transform: translateY(-3px); 
+}
